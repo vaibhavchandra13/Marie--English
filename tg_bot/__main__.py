@@ -18,11 +18,16 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hello {}, my name is {}! if you have any questions about how to use me please give me /help... 
+𝗛𝗲𝗹𝗹𝗼 {}, 𝗜 𝗮𝗺 𝗪𝗼𝗹𝗳 𝗕𝗼𝘁 {}! 
 
-I am a group manager bot maintained by  [VancedSupport](tg://user?id={}).
+𝙄 𝙖𝙢 𝙖 𝙨𝙞𝙢𝙥𝙡𝙚 𝙚𝙖𝙨𝙮 𝙩𝙤 𝙪𝙨𝙚 𝙜𝙧𝙤𝙪𝙥 𝙢𝙖𝙣𝙖𝙜𝙚𝙧 𝙗𝙤𝙩
+𝙐𝙨𝙚 𝙢𝙚 𝙩𝙤 𝙧𝙪𝙡𝙚 𝙩𝙝𝙚𝙢 𝙖𝙡𝙡
 
-For more info click /help...
+𝙄𝙛 𝙮𝙤𝙪 𝙝𝙖𝙫𝙚 𝙖𝙣𝙮 𝙦𝙪𝙚𝙨𝙩𝙞𝙤𝙣𝙨 𝙖𝙗𝙤𝙪𝙩 𝙝𝙤𝙬 𝙩𝙤 𝙪𝙨𝙚 𝙢𝙚 𝙥𝙡𝙚𝙖𝙨𝙚 𝙜𝙞𝙫𝙚 𝙢𝙚 /𝙝𝙚𝙡𝙥...
+
+🅾🆆🅽🅴🆁 [♥ＧｒｅｙＷｏｌｆＸＤ♥](tg://user?id={GreyWolfXD}).
+
+ɴᴇᴇᴅ ʜᴇʟᴘ ᴛᴏ ᴜꜱᴇ ᴍᴇ. ᴜꜱᴇ /help
 
 
 """
@@ -44,7 +49,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/TechTizier) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/GreyWolfXD) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me.
 Every little helps can take me to next level!
 There are two ways of paying him; [PayPal - Coming Soon](paypal.me/), or [Monzo - Coming Soon](monzo.me/)."""
@@ -139,7 +144,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("waked up😏😏😏")
+        update.effective_message.reply_text("(っ◔◡◔)っ ♥ Wolf Bot Is Alive ♥")
 
 
 # for test purposes
